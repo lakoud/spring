@@ -28,7 +28,6 @@ public class ArticleController implements ArticleApi {
     }
 
     @Override
-    @PostMapping(value = APP_ROOT + "/articles/create", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 
     public ArticleDto save(ArticleDto dto) {
         return articleService.save(dto);
